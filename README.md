@@ -1,6 +1,6 @@
 # evernote2onenote
 
-Convert EverNote Notebooks into OneNote notes.
+Convert EverNote Notebooks into OneNote notes on a Mac.
 
 ## Background
 In ~2010, Evernote was way ahead of its time, and I stored everything there for work and home. Now, Evernote is almost $20/month and OneNote has most, if not all of the functionality. My Evernote notes contained images, PDF attachments, tables, todo lists, HTML pages and I wanted all of this to be brought into OneNote, using my Mac.
