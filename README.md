@@ -7,17 +7,7 @@ In ~2010, Evernote was way ahead of its time, and I stored everything there for 
 
 I wrote this over a weekend, as my first project using Cursor.AI. As such, the code is pretty awful, but it works, and I was able to import ~1300 notes from 36 notebooks of 1.2GB overnight. 
 
-There seem to be other solutions for converting from Endnote to Onenote that seemed to be retired, to work only on a PC, or didn't work. This software is not affiliated with any other software.
-
-### Versions
-I developed this in May 2025, using 
-* Evernote 10.136.4-mac-ddl-public (20250425130902), Editor: v182.7.2, Service: v2.42.1
-* OneNote for Mac Version 16.96 (25041326)
-* MacOS 14.3.1 (23D60)
-* Python 3.13.1
-* pip 24.3.1
-
-I doubt this will work on Windows and have no idea if it will work on any other version of Evernote, OneNote or Python.
+There are other solutions for converting from Endnote to Onenote that seemed to be retired, to work only on a PC, or didn't work for me. This software is not affiliated with any of these other software packages.
 
 ## Usage
 `evernote2onenote.py -h`
@@ -53,10 +43,20 @@ I doubt this will work on Windows and have no idea if it will work on any other 
 7. I've left all the debugging statements on
 
 ## TODO
-1. convert into a pythnon package
+1. convert into a python package
 2. work out how to edit onenote craeted/modified dates
 3. add the ability to pause the processing of notes
 4. simple GUI
+
+## Versions
+I developed this in May 2025, using 
+* Evernote 10.136.4-mac-ddl-public (20250425130902), Editor: v182.7.2, Service: v2.42.1
+* OneNote for Mac Version 16.96 (25041326)
+* MacOS 14.3.1 (23D60)
+* Python 3.13.1
+* pip 24.3.1
+
+I doubt this will work on Windows and have no idea if it will work on any other version of Evernote, OneNote or Python.
 
 # WARRANTY
 This code comes with no warranty. You should backup your OneNote notebook before using. I share this software in the hope that it is useful to you. I will be turning off my Evernote subscription and I don't expect i'll be actively supporting this.
