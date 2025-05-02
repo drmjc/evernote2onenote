@@ -20,6 +20,8 @@ I developed this in May 2025, using
 I doubt this will work on Windows and have no idea if it will work on any other version of Evernote, OneNote or Python.
 
 ## Usage
+`evernote2onenote.py -h`
+
 ### Workflow for one Notebook
 1. in Evernote, export your Notebook to an ENEX format file, and have all the export note attributes selected, called my_notebook.enex
 2. convert the enex file to individual html files: `evernote2onenote.py convert ./my_notebook.enex --html_dir .` This will create lots of HTML files and attachment files.
