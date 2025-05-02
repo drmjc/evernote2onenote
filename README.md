@@ -52,6 +52,12 @@ I doubt this will work on Windows and have no idea if it will work on any other 
 6. I could have used the Microsoft Graph API but that seemed more complex to complete in a weekend
 7. I've left all the debugging statements on
 
+## TODO
+1. convert into a pythnon package
+2. work out how to edit onenote craeted/modified dates
+3. add the ability to pause the processing of notes
+4. simple GUI
+
 # WARRANTY
 This code comes with no warranty. You should backup your OneNote notebook before using. I share this software in the hope that it is useful to you. I will be turning off my Evernote subscription and I don't expect i'll be actively supporting this.
 
