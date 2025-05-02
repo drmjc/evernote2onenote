@@ -22,13 +22,13 @@ I doubt this will work on Windows and have no idea if it will work on any other 
 ## Usage
 ### Workflow for one Notebook
 1. in Evernote, export your Notebook to an ENEX format file, and have all the export note attributes selected, called my_notebook.enex
-2. convert the enex file to individual html files: convert_evernote_to_onenote.py `./my_notebook.enex . --html_dir .` This will create lots of HTML files and attachment files.
+2. convert the enex file to individual html files: `evernote2onenote.py convert ./my_notebook.enex --html_dir .` This will create lots of HTML files and attachment files.
 3. Open OneNote and select the Notebook where you want the notes to be imported
-4. import those html files into this Notebook using `./import_html_to_onenote.py --html_dir . --clean-temp`
+4. import those html files into this Notebook using `evernote2onenote.py import . --clean-temp`
 
 ### Workflow for many Notebooks
 1. export all your notebooks from Evernote as ENEX files. Save them all in a folder, called './queue'
-2. run evernote2onenote batch ./queue --archive-dir ./completed
+2. run `evernote2onenote batch ./queue --archive-dir ./completed`
 
 ## Features
 * tables, lists and formatting are imported
