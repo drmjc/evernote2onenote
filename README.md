@@ -24,13 +24,13 @@ I doubt this will work on Windows and have no idea if it will work on any other 
 
 ### Workflow for one Notebook
 1. in Evernote, export your Notebook to an ENEX format file, and have all the export note attributes selected, called my_notebook.enex
-2. convert the enex file to individual html files: `evernote2onenote.py convert ./my_notebook.enex --html_dir .` This will create lots of HTML files and attachment files.
+2. convert the enex file to individual html files: `evernote2onenote.py convert ./my_notebook.enex --html_dir .`. This will create lots of HTML files and attachment files.
 3. Open OneNote and select the Notebook where you want the notes to be imported
-4. import those html files into this Notebook using `evernote2onenote.py import . --clean-temp`
+4. import those html files into this Notebook using `evernote2onenote.py import . --clean-temp`. This will create a new 'Section' called my_notebook and import each note, from oldest to newest.
 
 ### Workflow for many Notebooks
 1. export all your notebooks from Evernote as ENEX files. Save them all in a folder, called './queue'
-2. run `evernote2onenote batch ./queue --archive-dir ./completed`
+2. run `evernote2onenote batch ./queue --archive-dir ./completed`. This will import each ENEX file at a time.
 
 ## Features
 * tables, lists and formatting are imported
@@ -41,6 +41,7 @@ I doubt this will work on Windows and have no idea if it will work on any other 
 * A header is added to indicate that the note was imported from EverNote and its orgiinal created and modified date
 * In my experience, pasting anything into OneNote on Mac results in a paste error about 20-40% of the time. This script dismisses the dialog box and will keep trying & rarely has to try more than once to paste the contents
 * It pauses longer when attaching larger PDF attachments
+* Notebooks and Notes can have spaces and some special characters in it. Unsafe characters will be replaced.
 
 ## Limitations
 1. This does not set the notes created and modified times
@@ -49,9 +50,10 @@ I doubt this will work on Windows and have no idea if it will work on any other 
 4. todo lists are imported as bullet lists with ticks and squares as icons
 5. You can't use your computer while this is running, as OneNote needs to have the focus
 6. I could have used the Microsoft Graph API but that seemed more complex to complete in a weekend
+7. I've left all the debugging statements on
 
 # WARRANTY
-This code comes with no warranty. You should backup your OneNote notebook before using. I share software in the hope that it is useful to you. I will be turning off my Evernote subscription and I don't expect i'll be actively supporting this.
+This code comes with no warranty. You should backup your OneNote notebook before using. I share this software in the hope that it is useful to you. I will be turning off my Evernote subscription and I don't expect i'll be actively supporting this.
 
 # MIT LICENSE
 
