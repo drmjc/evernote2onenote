@@ -1,0 +1,4 @@
+pyautogui>=0.9.54
+pyperclip>=1.8.2
+pyobjc-framework-Cocoa>=9.2  # Required for macOS clipboard operations
+pyobjc-framework-Quartz>=9.2  # Required for macOS UI automation 
